@@ -41,8 +41,7 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=test_db
-      - MYSQL_USER: admin
-      - MYSQL_PASSWORD: admin
+      - MYSQL_USER: root
     volumes:
       - ./myvolume:/var/lib/mysql
     healthcheck:
